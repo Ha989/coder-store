@@ -34,7 +34,6 @@ function HomePage() {
       setLoading(true);
       try {
         const res = await apiService.get("/products");
-        console.log(res);
         setProducts(res.data);
         setError("");
       } catch (error) {
